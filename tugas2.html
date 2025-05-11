@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil Silmi Nur</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fde3e3;
+      color: #333;
+    }
+
+    nav {
+      background-color: #7d0000;
+      color: white;
+      padding: 15px 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 30px 20px;
+    }
+
+    /* Header */
+    .header-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .header-text h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .header-text p {
+      font-size: 1.1em;
+    }
+
+    .header-image img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #8f1e1e;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    /* About Me (Biodata) */
+    .biodata-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+      padding-bottom: 10px;
+    }
+
+    .biodata-item {
+      background-color: #ffc0c0;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    /* Portfolio */
+    .portfolio {
+      display: flex;
+      justify-content: center; 
+      flex-wrap: wrap;         
+      gap: 20px;               
+      margin-top: 20px;
+      }
+    
+    .project {
+      background-color: #cf5757;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+    }
+
+    .project-title {
+    font-size: 1.2em;
+    margin: 10px 0 5px 0;
+    }
+
+    .project-desc {
+    font-size: 1em;
+    margin: 0;
+    }
+
+    /* Warna berbeda tiap proyek */
+    .project-1 .project-title {
+    color: #fff;
+    }
+
+    .project-1 .project-desc {
+    color: #fff9f9; 
+    }
+
+    .project-2 .project-title {
+    color: #fff; 
+    }
+
+    .project-2 .project-desc {
+    color: #fff9f9; 
+    }
+
+    .project-3 .project-title {
+    color: #fff; 
+    }
+
+    .project-3 .project-desc {
+    color: #fff9f9; 
+    }
+
+
+    .project img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 30px;
+      border-bottom: 3px solid #efb0b0;
+      padding-bottom: 5px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .header-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .header-image img {
+        margin: 1 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu -->
+  <nav>
+    <ul>
+      <li><a href="#">Brand</a></li>
+      <li><a href="#">Header</a></li>
+      <li><a href="#">Biodata</a></li>
+      <li><a href="#">Portofolio</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <section>
+    <div class="header-container">
+      <div class="header-text">
+        <h1>Hai, Selamat Datang!</h1>
+        <p>Situs ini memuat informasi lengkap tentang latar belakang, keahlian, dan hasil karya saya.</p>
+        <a href="https://github.com/Nnojhan" class="button">Pelajari Lebih Lanjut</a>
+      </div>
+      <div class="header-image">
+        <img src="welcome image.png" alt="Gambar sambutan" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Biodata -->
+  <section>
+    <h2>About Me</h2>
+    <p>Hi! I'm Silmi Nur, a fresh graduate in Mathematics who always curious to learn new things.</p>
+    <div class="biodata-grid">
+      <div class="biodata-item">Name: Silmi Nur</div>
+      <div class="biodata-item">Education: Bachelor’s Degree in Mathematics</div>
+      <div class="biodata-item">Work: Freelancer</div>
+    </div>
+    <div class="biodata-grid">
+      <div class="biodata-item">Contact: 08xxx</div>
+      <div class="biodata-item">Hobby: Reading</div>
+      <div class="biodata-item">Address: Bandung</div>
+    </div>
+  </section>
+
+  <!-- Portofolio -->
+  <section>
+    <h2>Portofolio</h2>
+    <div class="portfolio">
+      <div class="project project-1">
+        <img src="project.png" alt="Proyek 1" />
+        <h3 class="project-title">Proyek 1</h3>
+        <p class="project-desc">Sebuah proyek tentang A</p>
+      </div>
+      <div class="project project-2">
+        <img src="project.png" alt="Proyek 2" />
+        <h3 class="project-title">Proyek 2</h3>
+        <p class="project-desc">Sebuah proyek tentang B</p>
+      </div>
+      <div class="project project-3">
+        <img src="project.png" alt="Proyek 3" />
+        <h3 class="project-title">Proyek 3</h3>
+        <p class="project-desc">Sebuah proyek tentang C</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
